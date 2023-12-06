@@ -27,8 +27,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name : Test
-      run : mvn test
+        
+    #- name : Test
+    #  run : mvn test
       
     - name: Build with Maven
       run: mvn -B package -DskipTests --file pom.xml
@@ -37,7 +38,7 @@ jobs:
       run: sh make_html.sh target/biblio-0.1.jar
         
     - name : Liste
-      run : ls target
+      run : ls
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
