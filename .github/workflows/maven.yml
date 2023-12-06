@@ -38,7 +38,7 @@ jobs:
       run: sh make_html.sh target/biblio-0.1.jar
         
     - name : Liste
-      run : ls wwwwroot
+      run : ls wwwroot
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
