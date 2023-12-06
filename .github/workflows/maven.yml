@@ -34,7 +34,7 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Exécuter le script make_html.sh
-      run: sh make_html.sh target/
+      run: sh make_html.sh /target/biblio-0.1.jar
         
     - name : Liste
       run : ls
