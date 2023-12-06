@@ -36,7 +36,9 @@ jobs:
     - name: Exécuter le script make_html.sh
       run: chmod +x make_html.sh
         ./make_html.sh
-      
+        
+    - name : Liste
+      run : ls *.html
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
