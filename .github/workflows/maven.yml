@@ -40,9 +40,8 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        publish_branch: gh-pages
+        branch: gh-pages
         folder: wwwroot
-        ssh-key: ${{ secrets.DEPLOY_KEY }}
         
     #- name : Liste
     # run : ls wwwroot
