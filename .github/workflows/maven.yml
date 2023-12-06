@@ -34,8 +34,7 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Exécuter le script make_html.sh
-      run: chmod +x make_html.sh
-        ./make_html.sh
+      run: sh make_html.sh
         
     - name : Liste
       run : ls
