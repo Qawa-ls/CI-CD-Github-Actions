@@ -38,13 +38,11 @@ jobs:
       run: sh make_html.sh target/biblio-0.1.jar
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         publish_branch: gh-pages
-        folder: ./wwwroot
+        folder: wwwroot
         
-          
-      
     #- name : Liste
     # run : ls wwwroot
 
