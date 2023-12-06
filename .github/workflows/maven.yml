@@ -38,7 +38,7 @@ jobs:
         ./make_html.sh
         
     - name : Liste
-      run : ls *.html
+      run : ls
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
