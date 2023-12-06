@@ -40,9 +40,8 @@ jobs:
     - name: Deploy 🚀
       uses: Qawa-ls/github-pages-deploy-action@v4
       with:
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: ./wwwroot
-          publish_branch: gh-pages
+        folder: ./wwwroot
+        publish_branch: gh-pages
           
       
     #- name : Liste
