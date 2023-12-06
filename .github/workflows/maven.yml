@@ -36,9 +36,17 @@ jobs:
       
     - name: Exécuter le script make_html.sh
       run: sh make_html.sh target/biblio-0.1.jar
-        
-    - name : Liste
-      run : ls wwwroot
+
+    - name: Deploy 🚀
+      uses: Qawa-ls/github-pages-deploy-action@v4
+      with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          publish_dir: ./wwwroot
+          publish_branch: gh-pages
+          
+      
+    #- name : Liste
+    # run : ls wwwroot
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
